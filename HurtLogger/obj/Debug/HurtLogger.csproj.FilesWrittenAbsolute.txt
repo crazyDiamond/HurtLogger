@@ -1,0 +1,7 @@
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/HurtLogger.dll.mdb
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/HurtLogger.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/obj/Debug/HurtLogger.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/obj/Debug/HurtLogger.dll.mdb
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/Xamarin.Forms.Core.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/Xamarin.Forms.Xaml.dll
