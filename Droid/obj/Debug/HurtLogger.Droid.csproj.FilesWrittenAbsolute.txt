@@ -17,6 +17,8 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/uploadflags.txt
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/HurtLogger.Droid.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/HurtLogger.Droid.dll.mdb
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/SQLite.Net.dll
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/SQLite.Net.Platform.XamarinAndroid.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/Xamarin.Android.Support.v4.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/FormsViewGroup.dll

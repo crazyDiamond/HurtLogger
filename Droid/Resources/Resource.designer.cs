@@ -26,6 +26,8 @@ namespace HurtLogger.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::HurtLogger.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::HurtLogger.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -57,13 +59,10 @@ namespace HurtLogger.Droid
 			public const int leads = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int monoandroidsplash = 2130837508;
+			public const int opportunities = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int opportunities = 2130837509;
-			
-			// aapt resource value: 0x7f020006
-			public const int settings = 2130837510;
+			public const int settings = 2130837509;
 			
 			static Drawable()
 			{
@@ -75,18 +74,21 @@ namespace HurtLogger.Droid
 			}
 		}
 		
-		public partial class Style
+		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int Mono_Android_Theme_Splash = 2130903040;
+			// aapt resource value: 0x7f030001
+			public const int ApplicationName = 2130903041;
 			
-			static Style()
+			// aapt resource value: 0x7f030000
+			public const int Hello = 2130903040;
+			
+			static String()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
-			private Style()
+			private String()
 			{
 			}
 		}

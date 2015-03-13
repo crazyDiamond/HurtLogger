@@ -15,11 +15,11 @@ public final class R {
         public static final int contacts=0x7f020001;
         public static final int icon=0x7f020002;
         public static final int leads=0x7f020003;
-        public static final int monoandroidsplash=0x7f020004;
-        public static final int opportunities=0x7f020005;
-        public static final int settings=0x7f020006;
+        public static final int opportunities=0x7f020004;
+        public static final int settings=0x7f020005;
     }
-    public static final class style {
-        public static final int Mono_Android_Theme_Splash=0x7f030000;
+    public static final class string {
+        public static final int ApplicationName=0x7f030001;
+        public static final int Hello=0x7f030000;
     }
 }

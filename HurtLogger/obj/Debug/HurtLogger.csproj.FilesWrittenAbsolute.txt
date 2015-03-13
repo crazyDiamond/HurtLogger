@@ -5,3 +5,4 @@
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/obj/Debug/HurtLogger.dll.mdb
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/Xamarin.Forms.Core.dll
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/SQLite.Net.dll

@@ -68,6 +68,8 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"HurtLogger.Droid.dll",
+		"SQLite.Net.dll",
+		"SQLite.Net.Platform.XamarinAndroid.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"FormsViewGroup.dll",
