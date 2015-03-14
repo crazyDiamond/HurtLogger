@@ -9,7 +9,7 @@ namespace HurtLogger
 		public string Username { get; set; }
 		public string Sex{ get; set;}
 		public int Age { get; set; }
-		public bool Admin { get; set;}
+		public bool IsAdmin { get; set;}
 	}
 
 

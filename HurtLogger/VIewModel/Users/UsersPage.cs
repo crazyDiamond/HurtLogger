@@ -8,21 +8,34 @@ namespace HurtLogger
 	{
 		public UsersPage (){
 			this.Title ="Manage Users";
-			this.SetBinding (ContentPage.TitleProperty, "Name");
+			this.SetBinding (Page.TitleProperty, "Name");
 
 			NavigationPage.SetHasNavigationBar (this, true);
-			var nameLabel = new Label { Text = "Name" };
+			var nameLabel = new Label { Text = "User Name" };
 			var nameEntry = new Entry ();
 
-			nameEntry.SetBinding (Entry.TextProperty, "Name");
+			nameEntry.SetBinding (Entry.TextProperty, "Username");
 
-			var notesLabel = new Label { Text = "Notes" };
+			var selectSexLabel = new Label { Text = "Select Sex"};
+			var selectSexList = new ListView
+			{
+				RowHeight = 40
+			};
+			selectSexList.ItemsSource = new string []
+			{
+				"Male",
+				"Female"
+			};
+			selectSexList.SetBinding (Entry.TextProperty, "Sex");
+
+
+			var notesLabel = new Label { Text = "Age" };
 			var notesEntry = new Entry ();
-			notesEntry.SetBinding (Entry.TextProperty, "Notes");
+			notesEntry.SetBinding (Entry.TextProperty, "Age");
 
-			var doneLabel = new Label { Text = "Done" };
+			var doneLabel = new Label { Text = "Admin" };
 			var doneEntry = new Switch ();
-			doneEntry.SetBinding (Switch.IsToggledProperty, "Done");
+			doneEntry.SetBinding (Switch.IsToggledProperty, "IsAdmin");
 
 			var saveButton = new Button { Text = "Save" };
 			saveButton.Clicked += (sender, e) => {
@@ -52,10 +65,11 @@ namespace HurtLogger
 			};
 
 			Content = new StackLayout {
-				VerticalOptions = LayoutOptions.StartAndExpand,
+				VerticalOptions = LayoutOptions.FillAndExpand,
 				Padding = new Thickness(20),
 				Children = {
 					nameLabel, nameEntry, 
+					selectSexLabel, selectSexList,
 					notesLabel, notesEntry,
 					doneLabel, doneEntry,
 					saveButton, deleteButton, cancelButton,

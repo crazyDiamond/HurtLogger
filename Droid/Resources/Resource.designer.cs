@@ -62,7 +62,10 @@ namespace HurtLogger.Droid
 			public const int opportunities = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int settings = 2130837509;
+			public const int plus = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int settings = 2130837510;
 			
 			static Drawable()
 			{
