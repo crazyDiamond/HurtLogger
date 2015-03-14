@@ -9,13 +9,13 @@ namespace HurtLogger
 			this.Add (new MenuItem () { 
 				Title = "Users", 
 				IconSource = "contracts.png", 
-				TargetType = typeof(UsersPage)
+				TargetType = typeof(UsersListPage)
 			});
 
 			this.Add (new MenuItem () { 
-				Title = "Reports", 
+				Title = "Hurt Logs", 
 				IconSource = "Lead.png", 
-				TargetType = typeof(ReportsPage)
+				TargetType = typeof(HurtLogListPage)
 			});
 
 			this.Add (new MenuItem () { 

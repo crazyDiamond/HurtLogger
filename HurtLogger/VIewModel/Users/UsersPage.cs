@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace HurtLogger
 {
@@ -39,8 +40,10 @@ namespace HurtLogger
 
 			var saveButton = new Button { Text = "Save" };
 			saveButton.Clicked += (sender, e) => {
-				var todoItem = (User)BindingContext;
-				App.Database.SaveItem(todoItem);
+				var userItem = (User)BindingContext;
+				Debug.WriteLine (DateTime.UtcNow);
+				userItem.LastUpdatedAt = DateTime.UtcNow;
+				App.Database.SaveItem(userItem);
 				this.Navigation.PopAsync();
 			};
 

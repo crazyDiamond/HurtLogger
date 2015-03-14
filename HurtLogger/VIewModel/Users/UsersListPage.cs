@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 using System.Diagnostics;
 
@@ -21,7 +20,7 @@ namespace HurtLogger
 				userPage.BindingContext = userItem;
 
 				((App)App.Current).ResumeAtUserId = userItem.ID;
-				Debug.WriteLine("setting ResumeAtTodoId = " + userItem.ID);
+				Debug.WriteLine("setting ResumeAtUserId = " + userItem.ID);
 
 				Navigation.PushAsync(userPage);
 			};
@@ -29,7 +28,7 @@ namespace HurtLogger
 			var layout = new StackLayout();
 			if (Device.OS == TargetPlatform.WinPhone) { // WinPhone doesn't have the title showing
 				layout.Children.Add(new Label{
-					Text="Todo", 
+					Text="Users", 
 					FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label))});
 			}
 			layout.Children.Add(listView);

@@ -15,6 +15,7 @@ namespace HurtLogger
 		{
 			database = DependencyService.Get<ISQLite> ().GetConnection ();
 			database.CreateTable<User>();
+			database.CreateTable<HurtLog> ();
 		}
 		public IEnumerable<User> GetItems () {
 			return (from i in database.Table<User>() select i).ToList();
@@ -47,6 +48,17 @@ namespace HurtLogger
 			}
 		}
 
+		public int SaveHurtLog (HurtLog hurtLogItem)
+		{
+			lock (locker) {
+				if (hurtLogItem.ID != 0) {
+					database.Update(hurtLogItem);
+					return hurtLogItem.ID;
+				} else {
+					return database.Insert(hurtLogItem);
+				}
+			}
+		}
 	}
 }
 

@@ -1,22 +1,16 @@
-
+﻿using System;
 using Xamarin.Forms;
 
 namespace HurtLogger
 {
-	public class UserItemCell :ViewCell
+	public class HurtLogItemCell : ViewCell
 	{
-		public UserItemCell(){
+		public HurtLogItemCell(){
 
-			var userNameLable = new Label {
+			var titleLabel = new Label {
 				YAlign = TextAlignment.Center
 			};
-			userNameLable.SetBinding (Label.TextProperty, "Username");
-
-			var lastUpdatedLabel = new Label {
-				YAlign = TextAlignment.Center
-			};
-			lastUpdatedLabel.SetBinding (Label.TextProperty, "LastUpdatedAt");
-
+			titleLabel.SetBinding (Label.TextProperty, "Title");
 
 			var tick = new Image {
 				Source = ImageSource.FromFile ("check.png"),
@@ -27,7 +21,7 @@ namespace HurtLogger
 				Padding = new Thickness(20, 0, 0, 0),
 				Orientation = StackOrientation.Horizontal,
 				HorizontalOptions = LayoutOptions.StartAndExpand,
-				Children = {userNameLable,lastUpdatedLabel, tick}
+				Children = {titleLabel, tick}
 			};
 			View = layout;
 		}
@@ -43,5 +37,6 @@ namespace HurtLogger
 
 	}
 }
+
 
 
