@@ -9,6 +9,8 @@ namespace HurtLogger
 	public class DatabaseAccessor
 	{
 		SQLiteConnection database;
+		static object locker = new object ();
+
 		public DatabaseAccessor ()
 		{
 			database = DependencyService.Get<ISQLite> ().GetConnection ();
@@ -25,10 +27,26 @@ namespace HurtLogger
 		{
 			return database.Table<User>().FirstOrDefault(x => x.ID == id);
 		}
+
+		public int SaveItem (User item) 
+		{
+			lock (locker) {
+				if (item.ID != 0) {
+					database.Update(item);
+					return item.ID;
+				} else {
+					return database.Insert(item);
+				}
+			}
+		}
+
 		public int DeleteItem(int id)
 		{
-			return database.Delete<User>(id);
+			lock (locker) {
+				return database.Delete<User>(id);
+			}
 		}
+
 	}
 }
 

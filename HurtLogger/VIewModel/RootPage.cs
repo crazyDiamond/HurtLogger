@@ -26,12 +26,7 @@ namespace HurtLogger
 			IsPresented = false;
 		}
 	}
-	public class UsersPage : ContentPage
-	{
-		public UsersPage (){
-			this.Title ="Users";
-		}
-	}
+
 
 	public class ReportsPage : ContentPage
 	{
