@@ -29,7 +29,7 @@ namespace HurtLogger
 			return database.Table<User>().FirstOrDefault(x => x.ID == id);
 		}
 
-		public int SaveItem (User item) 
+		public int SaveUser (User item) 
 		{
 			lock (locker) {
 				if (item.ID != 0) {
@@ -41,7 +41,7 @@ namespace HurtLogger
 			}
 		}
 
-		public int DeleteItem(int id)
+		public int DeleteUser(int id)
 		{
 			lock (locker) {
 				return database.Delete<User>(id);
@@ -59,6 +59,14 @@ namespace HurtLogger
 				}
 			}
 		}
+
+		public int DeleteHurtLog(int id)
+		{
+			lock (locker) {
+				return database.Delete<HurtLog>(id);
+			}
+		}
+
 	}
 }
 

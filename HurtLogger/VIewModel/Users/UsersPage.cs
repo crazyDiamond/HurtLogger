@@ -43,14 +43,14 @@ namespace HurtLogger
 				var userItem = (User)BindingContext;
 				Debug.WriteLine (DateTime.UtcNow);
 				userItem.LastUpdatedAt = DateTime.UtcNow;
-				App.Database.SaveItem(userItem);
+				App.Database.SaveUser(userItem);
 				this.Navigation.PopAsync();
 			};
 
 			var deleteButton = new Button { Text = "Delete" };
 			deleteButton.Clicked += (sender, e) => {
 				var user = (User)BindingContext;
-				App.Database.DeleteItem(user.ID);
+				App.Database.DeleteUser(user.ID);
 				this.Navigation.PopAsync();
 			};
 

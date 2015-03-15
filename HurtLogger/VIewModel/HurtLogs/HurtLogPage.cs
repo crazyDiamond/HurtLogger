@@ -17,7 +17,7 @@ namespace HurtLogger
 
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
 
-//			var selectUserLabel = new Label { Text = "Select User"};
+			var selectUserLabel = new Label { Text = "Select User"};
 //			var selectUserList = new ListView
 //			{
 //				RowHeight = 40
@@ -49,14 +49,13 @@ namespace HurtLogger
 
 			var deleteButton = new Button { Text = "Delete" };
 			deleteButton.Clicked += (sender, e) => {
-				var user = (User)BindingContext;
-				App.Database.DeleteItem(user.ID);
+				var hurtLog = (HurtLog)BindingContext;
+				App.Database.DeleteHurtLog(hurtLog.ID);
 				this.Navigation.PopAsync();
 			};
 
 			var cancelButton = new Button { Text = "Cancel" };
 			cancelButton.Clicked += (sender, e) => {
-				var user = (User)BindingContext;
 				this.Navigation.PopAsync();
 			};
 
@@ -67,7 +66,7 @@ namespace HurtLogger
 				Padding = new Thickness(20),
 				Children = {
 					titleLabel, titleEntry, 
-					categoryLabel, categoryEntry, descriptionLabel, 
+					categoryLabel, categoryEntry, descriptionLabel, selectUserLabel, 
 					descriptionEntry, saveButton, deleteButton, cancelButton
 				}
 			};
