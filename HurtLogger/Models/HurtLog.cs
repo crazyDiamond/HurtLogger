@@ -5,7 +5,7 @@ namespace HurtLogger
 {
 	public class HurtLog 
 	{
-		[PrimaryKey, AutoIncrement]
+		 [PrimaryKey, AutoIncrement]
 		public int ID { get; set; }
 		public string Title { get; set;}
 		public int UserId { get; set;}

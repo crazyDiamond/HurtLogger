@@ -76,7 +76,7 @@ namespace HurtLogger
 			base.OnAppearing ();
 			// reset the 'resume' id, since we just want to re-start here
 			((App)Application.Current).ResumeAtUserId = -1;
-			listView.ItemsSource = App.Database.GetItems ();
+			listView.ItemsSource = App.Database.GetAllHurtLogs ();
 		}
 	}
 }

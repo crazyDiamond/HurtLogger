@@ -17,13 +17,21 @@ namespace HurtLogger
 			database.CreateTable<User>();
 			database.CreateTable<HurtLog> ();
 		}
+
 		public IEnumerable<User> GetItems () {
 			return (from i in database.Table<User>() select i).ToList();
 		}
-//		public IEnumerable<User> GetItemsNotDone ()
-//		{
-//			return database.Query<User>("SELECT * FROM [User] WHERE [Done] = 0");
-//		}
+
+		public IEnumerable<User> GetAllUsers ()
+		{
+			return database.Query<User>("SELECT ID, UserName FROM [User] ");
+		}
+
+		public System.Collections.IEnumerable GetAllHurtLogs ()
+		{
+			return database.Query<HurtLog>("SELECT ID, UserId, Title, Category, Description, Date FROM [HurtLog] ");
+		}
+
 		public User GetItem (int id) 
 		{
 			return database.Table<User>().FirstOrDefault(x => x.ID == id);

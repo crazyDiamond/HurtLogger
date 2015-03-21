@@ -16,10 +16,10 @@ namespace HurtLogger
 				(typeof (UserItemCell));
 			listView.ItemSelected += (sender, e) => {
 				var userItem = (User)e.SelectedItem;
-				var userPage = new UsersPage();
-				userPage.BindingContext = userItem;
+				var userPage = new UsersPage(userItem);
+				//userPage.BindingContext = userItem;
 
-				((App)App.Current).ResumeAtUserId = userItem.ID;
+				((App)Application.Current).ResumeAtUserId = userItem.ID;
 				Debug.WriteLine("setting ResumeAtUserId = " + userItem.ID);
 
 				Navigation.PushAsync(userPage);
@@ -42,7 +42,7 @@ namespace HurtLogger
 				tbi = new ToolbarItem("+", null, () =>
 					{
 						var userItem = new User();
-						var userPage = new UsersPage();
+						var userPage = new UsersPage(userItem);
 						userPage.BindingContext = userItem;
 						Navigation.PushAsync(userPage);
 					}, 0, 0);
@@ -50,7 +50,7 @@ namespace HurtLogger
 			if (Device.OS == TargetPlatform.Android) { // BUG: Android doesn't support the icon being null
 				tbi = new ToolbarItem ("+", "plus", () => {
 					var userItem = new User();
-					var userPage = new UsersPage();
+					var userPage = new UsersPage(userItem);
 					userPage.BindingContext = userItem;
 					Navigation.PushAsync(userPage);
 				}, 0, 0);
@@ -60,7 +60,7 @@ namespace HurtLogger
 				tbi = new ToolbarItem("Add", "add.png", () =>
 					{
 						var userItem = new User();
-						var userPage = new UsersPage();
+						var userPage = new UsersPage(userItem);
 						userPage.BindingContext = userItem;
 						Navigation.PushAsync(userPage);
 					}, 0, 0);
@@ -87,7 +87,7 @@ namespace HurtLogger
 		{
 			base.OnAppearing ();
 			// reset the 'resume' id, since we just want to re-start here
-			((App)App.Current).ResumeAtUserId = -1;
+			((App)Application.Current).ResumeAtUserId = -1;
 			listView.ItemsSource = App.Database.GetItems ();
 		}
 	}

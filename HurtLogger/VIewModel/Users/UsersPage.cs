@@ -7,7 +7,17 @@ namespace HurtLogger
 {
 	public class UsersPage : ContentPage
 	{
-		public UsersPage (){
+		private User _user;
+
+		public User User {
+			get{ return _user; }
+			set{ _user = value;}
+
+		}
+
+		public UsersPage (User userItem){
+			User = userItem;
+			BindingContext = userItem;
 			this.Title ="Manage Users";
 			this.SetBinding (Page.TitleProperty, "Name");
 
@@ -27,7 +37,12 @@ namespace HurtLogger
 				"Male",
 				"Female"
 			};
-			selectSexList.SetBinding (Entry.TextProperty, "Sex");
+			selectSexList.SetBinding(ListView.SelectedItemProperty, "Sex", BindingMode.TwoWay);
+//			selectSexList.SelectedItem = User.Sex;
+//			selectSexList.ItemSelected += (sender, e) => {
+//				if (e.SelectedItem == null) return; // don't do anything if we just de-selected the row
+//				User.Sex = e.SelectedItem.ToString();
+//			};
 
 
 			var notesLabel = new Label { Text = "Age" };
@@ -40,10 +55,10 @@ namespace HurtLogger
 
 			var saveButton = new Button { Text = "Save" };
 			saveButton.Clicked += (sender, e) => {
-				var userItem = (User)BindingContext;
+				User = (User)BindingContext;
 				Debug.WriteLine (DateTime.UtcNow);
-				userItem.LastUpdatedAt = DateTime.UtcNow;
-				App.Database.SaveUser(userItem);
+				User.LastUpdatedAt = DateTime.UtcNow;
+				App.Database.SaveUser(User);
 				this.Navigation.PopAsync();
 			};
 
@@ -61,12 +76,6 @@ namespace HurtLogger
 			};
 
 
-			var speakButton = new Button { Text = "Speak" };
-			speakButton.Clicked += (sender, e) => {
-				var todoItem = (User)BindingContext;
-				//DependencyService.Get<ITextToSpeech>().Speak(todoItem.Name + " " + todoItem.Notes);
-			};
-
 			Content = new StackLayout {
 				VerticalOptions = LayoutOptions.FillAndExpand,
 				Padding = new Thickness(20),
@@ -75,8 +84,7 @@ namespace HurtLogger
 					selectSexLabel, selectSexList,
 					notesLabel, notesEntry,
 					doneLabel, doneEntry,
-					saveButton, deleteButton, cancelButton,
-					speakButton
+					saveButton, deleteButton, cancelButton
 				}
 			};
 		}
