@@ -16,18 +16,18 @@ namespace HurtLogger
 			var titleEntry = new Entry ();
 
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
-
 			var selectUserLabel = new Label { Text = "Select User"};
-//			var selectUserList = new ListView
-//			{
-//				RowHeight = 40
-//			};
-//			selectUserList.ItemsSource = new string []
-//			{
-//				"Jeeva",
-//				"Kandhan"
-//			};
-//			selectUserList.SetBinding (Entry.TextProperty, "UserId");
+			var selectUserList = new ListView
+			{
+				RowHeight = 40
+			};
+
+			selectUserList.ItemsSource = App.Database.GetAllUsers ();
+			selectUserList.ItemTemplate = new DataTemplate(typeof(TextCell));
+			selectUserList.ItemTemplate.SetBinding (TextCell.TextProperty, "Username");
+			selectUserList.SetBinding(ListView.SelectedItemProperty, "UserId", BindingMode.TwoWay);
+//			/selectSexList.SetBinding(ListView.SelectedItemProperty, "Sex", BindingMode.TwoWay);
+		//			
 
 
 			var categoryLabel = new Label { Text = "Category" };
@@ -66,7 +66,7 @@ namespace HurtLogger
 				Padding = new Thickness(20),
 				Children = {
 					titleLabel, titleEntry, 
-					categoryLabel, categoryEntry, descriptionLabel, selectUserLabel, 
+					categoryLabel, categoryEntry, descriptionLabel, selectUserLabel, selectUserList,
 					descriptionEntry, saveButton, deleteButton, cancelButton
 				}
 			};

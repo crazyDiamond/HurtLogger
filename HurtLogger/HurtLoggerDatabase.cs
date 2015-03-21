@@ -27,6 +27,11 @@ namespace HurtLogger
 			return database.Query<User>("SELECT ID, UserName FROM [User] ");
 		}
 
+		public IEnumerable<User> GetUserNames ()
+		{
+			return database.Query<User>("SELECT UserName FROM [User] ");
+		}
+
 		public System.Collections.IEnumerable GetAllHurtLogs ()
 		{
 			return database.Query<HurtLog>("SELECT ID, UserId, Title, Category, Description, Date FROM [HurtLog] ");

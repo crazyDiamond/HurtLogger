@@ -29,3 +29,5 @@
 /Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
 /Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug/HurtLogger.dll
 /Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug/HurtLogger.dll.mdb
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.dll
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.Platform.XamarinIOS.Unified.dll

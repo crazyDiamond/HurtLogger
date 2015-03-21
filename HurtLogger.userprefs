@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Droid/HurtLogger.Droid.csproj">
+﻿<Properties StartupItem="iOS/HurtLogger.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Android-emulator-maps" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HurtLogger/Models/HurtLog.cs">
     <Files>
