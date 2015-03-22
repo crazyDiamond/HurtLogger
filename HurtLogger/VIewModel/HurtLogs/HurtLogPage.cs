@@ -9,14 +9,15 @@ namespace HurtLogger
 		public HurtLogPage (){
 
 			this.Title ="Add Hurt Log";
-			//this.SetBinding (Page.TitleProperty, "Name");
+			this.BackgroundColor = Colors.HLPageBackground;
+
 
 			NavigationPage.SetHasNavigationBar (this, true);
-			var titleLabel = new Label { Text = "Title" };
+			var titleLabel = new Label { Text = "Title", TextColor = Colors.HLLabelTextColor};
 			var titleEntry = new Entry ();
 
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
-			var selectUserLabel = new Label { Text = "Select User"};
+			var selectUserLabel = new Label { Text = "Select User", TextColor = Colors.HLLabelTextColor  };
 			var selectUserList = new ListView
 			{
 				RowHeight = 40
@@ -26,15 +27,12 @@ namespace HurtLogger
 			selectUserList.ItemTemplate = new DataTemplate(typeof(TextCell));
 			selectUserList.ItemTemplate.SetBinding (TextCell.TextProperty, "Username");
 			selectUserList.SetBinding(ListView.SelectedItemProperty, "UserId", BindingMode.TwoWay);
-//			/selectSexList.SetBinding(ListView.SelectedItemProperty, "Sex", BindingMode.TwoWay);
-		//			
 
-
-			var categoryLabel = new Label { Text = "Category" };
+			var categoryLabel = new Label { Text = "Category", TextColor = Colors.HLLabelTextColor };
 			var categoryEntry = new Entry ();
 			categoryEntry.SetBinding (Entry.TextProperty, "Category");
 
-			var descriptionLabel = new Label { Text = "Description" };
+			var descriptionLabel = new Label { Text = "Description", TextColor = Colors.HLLabelTextColor };
 			var descriptionEntry = new Entry ();
 			descriptionEntry.SetBinding (Entry.TextProperty, "Description");
 

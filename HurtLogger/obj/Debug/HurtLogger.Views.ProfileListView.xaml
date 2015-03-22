@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HurtLogger.ProfileListView">
+	<ContentView.Content>
+		<StackLayout Orientation="Horizontal">
+            <BoxView Color="Red"></BoxView>
+            <StackLayout>
+                <Label Text="{Binding Title}"></Label>
+                <Label Text="{Binding NewsURL}"></Label>
+            </StackLayout>
+        </StackLayout>
+	</ContentView.Content>
+</ContentView>

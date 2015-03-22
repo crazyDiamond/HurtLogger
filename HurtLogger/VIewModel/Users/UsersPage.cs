@@ -19,6 +19,7 @@ namespace HurtLogger
 			User = userItem;
 			BindingContext = userItem;
 			this.Title ="Manage Users";
+			this.BackgroundColor = Colors.HLPageBackground;
 			this.SetBinding (Page.TitleProperty, "Name");
 
 			NavigationPage.SetHasNavigationBar (this, true);
@@ -38,12 +39,6 @@ namespace HurtLogger
 				"Female"
 			};
 			selectSexList.SetBinding(ListView.SelectedItemProperty, "Sex", BindingMode.TwoWay);
-//			selectSexList.SelectedItem = User.Sex;
-//			selectSexList.ItemSelected += (sender, e) => {
-//				if (e.SelectedItem == null) return; // don't do anything if we just de-selected the row
-//				User.Sex = e.SelectedItem.ToString();
-//			};
-
 
 			var notesLabel = new Label { Text = "Age" };
 			var notesEntry = new Entry ();

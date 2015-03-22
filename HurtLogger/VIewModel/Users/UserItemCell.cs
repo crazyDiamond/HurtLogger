@@ -24,6 +24,7 @@ namespace HurtLogger
 			tick.SetBinding (VisualElement.IsVisibleProperty, "IsAdmin");
 
 			var layout = new StackLayout {
+				BackgroundColor = Colors.HLPageBackground,
 				Padding = new Thickness(20, 0, 0, 0),
 				Orientation = StackOrientation.Horizontal,
 				HorizontalOptions = LayoutOptions.StartAndExpand,

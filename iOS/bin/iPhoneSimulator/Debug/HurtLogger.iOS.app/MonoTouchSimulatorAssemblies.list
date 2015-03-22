@@ -27,4 +27,6 @@ System.Runtime.Serialization.dll
 HurtLogger.dll
 SQLite.Net.dll
 System.Text.Encoding.dll
+Xamarin.Forms.Xaml.dll
+System.Text.RegularExpressions.dll
 SQLite.Net.Platform.XamarinIOS.Unified.dll

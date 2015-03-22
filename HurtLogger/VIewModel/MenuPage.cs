@@ -11,14 +11,14 @@ namespace HurtLogger
 		{
 			Icon = "settings.png";
 			Title = "HurtLogger"; 
-			BackgroundColor = Color.FromHex ("333333");
+			BackgroundColor = Colors.HLMenuBackground;
 
 			Menu = new MenuListView ();
 
 			var menuLabel = new ContentView {
 				Padding = new Thickness (10, 36, 0, 5),
 				Content = new Label {
-					TextColor = Color.FromHex ("AAAAAA"),
+					TextColor = Color.White,
 					Text = "MENU", 
 				}
 			};

@@ -1,5 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using System.Diagnostics;
 
 namespace HurtLogger
@@ -9,7 +8,9 @@ namespace HurtLogger
 		ListView listView;
 		public UsersListPage ()
 		{
-			Title = "Users";
+			Title = "Profiles";
+			this.BackgroundColor = Colors.HLPageBackground;
+
 
 			listView = new ListView ();
 			listView.ItemTemplate = new DataTemplate 
@@ -17,7 +18,6 @@ namespace HurtLogger
 			listView.ItemSelected += (sender, e) => {
 				var userItem = (User)e.SelectedItem;
 				var userPage = new UsersPage(userItem);
-				//userPage.BindingContext = userItem;
 
 				((App)Application.Current).ResumeAtUserId = userItem.ID;
 				Debug.WriteLine("setting ResumeAtUserId = " + userItem.ID);
