@@ -8,3 +8,13 @@
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/SQLite.Net.dll
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/obj/Debug/HurtLogger.Views.ProfileListView.xaml
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/obj/Debug/ProfileListView.xaml.g.cs
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/mscorlib.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Core.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Linq.Queryable.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Diagnostics.Tools.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.ComponentModel.EventBasedAsync.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Net.Primitives.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Net.Requests.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Net.NetworkInformation.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Text.RegularExpressions.dll
