@@ -1,6 +1,6 @@
-# Version: 8.8.0.2 (ccfcd59)
+# Version: 8.9.1.3 (f7736a4)
 # [first argument, ignore] # /Users/jeevanadarajah/Projects/HurtLogger/iOS/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.0.2/bin/mtouch-64 \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.9.1.3/bin/mtouch-64 \
 	--cache \
 	/Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
