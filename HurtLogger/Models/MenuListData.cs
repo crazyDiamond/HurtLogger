@@ -17,17 +17,12 @@ namespace HurtLogger
 				IconSource = "hurtlog.jpg", 
 				TargetType = typeof(HurtLogListPage)
 			});
-
-			this.Add (new MenuItem () { 
-				Title = "Accounts", 
-				IconSource = "Accounts.png", 
-				TargetType = typeof(AccountsPage)
-			});
+		
 
 			this.Add (new MenuItem () {
-				Title = "Opportunities",
-				IconSource = "Opportunity.png",
-				TargetType = typeof(OpportunitiesPage)
+				Title = "Reports",
+				IconSource = "reports.png",
+				TargetType = typeof(ReportsListPage)
 			});
 
 		}

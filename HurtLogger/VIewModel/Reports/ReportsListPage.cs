@@ -1,12 +1,13 @@
-﻿using Xamarin.Forms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 using System.Diagnostics;
 
 namespace HurtLogger
 {
-	public class UsersListPage : ContentPage
+	public class ReportsListPage : ContentPage
 	{
-		ListView listView;
-		public UsersListPage ()
+		readonly ListView listView;
+		public ReportsListPage ()
 		{
 			this.BackgroundColor = Colors.HLPageBackground;
 
@@ -68,18 +69,7 @@ namespace HurtLogger
 
 			ToolbarItems.Add (tbi);
 
-//			if (Device.OS == TargetPlatform.iOS) {
-//				var tbi2 = new ToolbarItem ("?", null, () => {
-//					var todos = App.Database.GetItemsNotDone();
-//					var tospeak = "";
-//					foreach (var t in todos)
-//						tospeak += t.UserName + " ";
-//					if (tospeak == "") tospeak = "there are no tasks to do";
-//
-//					DependencyService.Get<ITextToSpeech>().Speak(tospeak);
-//				}, 0, 0);
-//				ToolbarItems.Add (tbi2);
-//			}
+
 			#endregion
 		}
 

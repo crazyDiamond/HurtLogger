@@ -11,9 +11,11 @@ namespace HurtLogger
 		{
 			Title = "Hurt Log";
 
+
 			listView = new ListView ();
 			listView.ItemTemplate = new DataTemplate 
 				(typeof (HurtLogItemCell));
+			listView.BackgroundColor = Colors.HLPageBackground;
 			listView.ItemSelected += (sender, e) => {
 				var hurtLogItem = (HurtLog)e.SelectedItem;
 				var hurtLogPage = new HurtLogPage();
@@ -23,6 +25,7 @@ namespace HurtLogger
 				Debug.WriteLine("setting ResumeAtUserId = " + hurtLogItem.UserId);
 
 				Navigation.PushAsync(hurtLogPage);
+
 			};
 
 			var layout = new StackLayout();

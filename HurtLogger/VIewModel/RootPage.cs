@@ -35,12 +35,6 @@ namespace HurtLogger
 		}
 	}
 
-	public class AccountsPage : ContentPage
-	{
-		public AccountsPage (){
-			this.Title = "Accounts";
-		}
-	}
 
 	public class OpportunitiesPage : ContentPage
 	{
