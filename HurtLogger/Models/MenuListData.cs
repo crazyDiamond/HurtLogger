@@ -14,7 +14,7 @@ namespace HurtLogger
 
 			this.Add (new MenuItem () { 
 				Title = "Hurt Logs", 
-				IconSource = "Lead.png", 
+				IconSource = "hurtlog.jpg", 
 				TargetType = typeof(HurtLogListPage)
 			});
 
