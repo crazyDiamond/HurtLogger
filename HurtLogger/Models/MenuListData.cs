@@ -25,6 +25,13 @@ namespace HurtLogger
 				TargetType = typeof(ReportsListPage)
 			});
 
+			this.Add (new MenuItem () {
+				Title = "About",
+				IconSource = "about.png",
+				TargetType = typeof(AboutPage)
+			});
+
+
 		}
 
 

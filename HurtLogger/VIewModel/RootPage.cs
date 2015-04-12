@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 
 namespace HurtLogger
@@ -28,20 +27,6 @@ namespace HurtLogger
 	}
 
 
-	public class ReportsPage : ContentPage
-	{
-		public ReportsPage (){
-			this.Title = "Reports";
-		}
-	}
-
-
-	public class OpportunitiesPage : ContentPage
-	{
-		public OpportunitiesPage (){
-			this.Title = "Opportunities";
-		}
-	}
 	public enum MasterBehavior
 	{
 		Default,
