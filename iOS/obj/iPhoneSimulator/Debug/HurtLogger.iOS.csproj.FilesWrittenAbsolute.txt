@@ -33,3 +33,8 @@
 /Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.Platform.XamarinIOS.Unified.dll
 /Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/hurtlogger160.png
 /Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/hurtlogger80.png
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/profile.png
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/plus24.png
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/about.png
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/view.png
+/Users/jeevanadarajah/Projects/HurtLogger/iOS/obj/iPhoneSimulator/Debug/recent.png

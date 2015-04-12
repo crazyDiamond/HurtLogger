@@ -132,6 +132,11 @@
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
     <BundleResource Include="Resources\hurtlogger.jpg" />
     <BundleResource Include="Resources\hurtlogger80.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\plus24.png" />
+    <BundleResource Include="Resources\about.png" />
+    <BundleResource Include="Resources\view.png" />
+    <BundleResource Include="Resources\recent.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

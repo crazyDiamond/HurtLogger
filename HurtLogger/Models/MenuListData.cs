@@ -8,26 +8,26 @@ namespace HurtLogger
 		{
 			this.Add (new MenuItem () { 
 				Title = "Profiles", 
-				IconSource = "contracts.png", 
+				IconSource = "profile.png", 
 				TargetType = typeof(UsersListPage)
 			});
 
 			this.Add (new MenuItem () { 
 				Title = "Add a Hurt Log", 
-				IconSource = "hurtlog.jpg", 
+				IconSource = "plus24.png", 
 				TargetType = typeof(HurtLogUserListPage)
 			});
 		
 
 			this.Add (new MenuItem () {
 				Title = "Recent Hurt Logs",
-				IconSource = "reports.png",
+				IconSource = "recent.png",
 				TargetType = typeof(HurtLogListPage)
 			});
 
 			this.Add (new MenuItem () {
 				Title = "View Hurt Logs",
-				IconSource = "reports.png",
+				IconSource = "view.png",
 				TargetType = typeof(ReportsListPage)
 			});
 
