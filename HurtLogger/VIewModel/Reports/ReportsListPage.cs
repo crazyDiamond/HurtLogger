@@ -9,6 +9,7 @@ namespace HurtLogger
 		public ReportsListPage ()
 		{
 			this.BackgroundColor = Colors.HLPageBackground;
+			this.Title = "Select a profile";
 
 
 			listView = new ListView ();
@@ -35,41 +36,7 @@ namespace HurtLogger
 			layout.VerticalOptions = LayoutOptions.FillAndExpand;
 			Content = layout;
 
-			#region toolbar
-			ToolbarItem tbi = null;
-			if (Device.OS == TargetPlatform.iOS)
-			{
-				tbi = new ToolbarItem("+", null, () =>
-					{
-						var userItem = new User();
-						var userPage = new UsersPage(userItem);
-						userPage.BindingContext = userItem;
-						Navigation.PushAsync(userPage);
-					}, 0, 0);
-			}
-			if (Device.OS == TargetPlatform.Android) { // BUG: Android doesn't support the icon being null
-				tbi = new ToolbarItem ("+", "plus", () => {
-					var userItem = new User();
-					var userPage = new UsersPage(userItem);
-					userPage.BindingContext = userItem;
-					Navigation.PushAsync(userPage);
-				}, 0, 0);
-			}
-			if (Device.OS == TargetPlatform.WinPhone)
-			{
-				tbi = new ToolbarItem("Add", "add.png", () =>
-					{
-						var userItem = new User();
-						var userPage = new UsersPage(userItem);
-						userPage.BindingContext = userItem;
-						Navigation.PushAsync(userPage);
-					}, 0, 0);
-			}
 
-			ToolbarItems.Add (tbi);
-
-
-			#endregion
 		}
 
 		protected override void OnAppearing ()

@@ -11,13 +11,19 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int accounts=0x7f020000;
-        public static final int contacts=0x7f020001;
-        public static final int icon=0x7f020002;
-        public static final int leads=0x7f020003;
-        public static final int opportunities=0x7f020004;
-        public static final int plus=0x7f020005;
-        public static final int settings=0x7f020006;
+        public static final int about=0x7f020000;
+        public static final int accounts=0x7f020001;
+        public static final int contacts=0x7f020002;
+        public static final int hurtlogger80=0x7f020003;
+        public static final int icon=0x7f020004;
+        public static final int leads=0x7f020005;
+        public static final int opportunities=0x7f020006;
+        public static final int plus=0x7f020007;
+        public static final int plus24=0x7f020008;
+        public static final int profile=0x7f020009;
+        public static final int recent=0x7f02000a;
+        public static final int settings=0x7f02000b;
+        public static final int view=0x7f02000c;
     }
     public static final class raw {
         public static final int hurtloggersqlite=0x7f030000;

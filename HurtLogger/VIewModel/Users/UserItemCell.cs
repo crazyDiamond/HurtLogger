@@ -12,12 +12,6 @@ namespace HurtLogger
 			};
 			userNameLable.SetBinding (Label.TextProperty, "Username");
 
-			var lastUpdatedLabel = new Label {
-				YAlign = TextAlignment.Center
-			};
-			lastUpdatedLabel.SetBinding (Label.TextProperty, "LastUpdatedAt");
-
-
 			var tick = new Image {
 				Source = ImageSource.FromFile ("check.png"),
 			};
@@ -28,7 +22,7 @@ namespace HurtLogger
 				Padding = new Thickness(20, 0, 0, 0),
 				Orientation = StackOrientation.Horizontal,
 				HorizontalOptions = LayoutOptions.StartAndExpand,
-				Children = {userNameLable,lastUpdatedLabel, tick}
+				Children = {userNameLable, tick}
 			};
 			View = layout;
 		}

@@ -8,6 +8,8 @@ namespace HurtLogger
 		public HurtLogUserListPage ()
 		{
 			this.BackgroundColor = Colors.HLPageBackground;
+			this.Title = "Select a profile";
+
 			listView = new ListView ();
 			listView.ItemTemplate = new DataTemplate 
 				(typeof (UserItemCell));

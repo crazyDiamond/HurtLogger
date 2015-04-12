@@ -28,3 +28,9 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll.mdb
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/raw/hurtloggersqlite.db3
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/plus.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/recent.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/about.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/view.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/plus24.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/profile.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/hurtlogger80.png
