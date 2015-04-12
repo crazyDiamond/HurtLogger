@@ -18,3 +18,5 @@
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Net.Requests.dll
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Net.NetworkInformation.dll
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Text.RegularExpressions.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/ExifLib.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/Xamarin.Forms.Labs.dll

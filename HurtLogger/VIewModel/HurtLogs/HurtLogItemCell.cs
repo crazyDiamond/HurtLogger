@@ -12,16 +12,15 @@ namespace HurtLogger
 			};
 			titleLabel.SetBinding (Label.TextProperty, "Title");
 
-			var tick = new Image {
-				Source = ImageSource.FromFile ("check.png"),
-			};
-			tick.SetBinding (VisualElement.IsVisibleProperty, "IsAdmin");
+			var dateLabel = new Label{YAlign = TextAlignment.Center };
+			dateLabel.SetBinding(Label.TextProperty, new Binding(path: "Date", stringFormat: "{0:dd/MM/yyyy}"));
+
 
 			var layout = new StackLayout {
 				Padding = new Thickness(20, 0, 0, 0),
 				Orientation = StackOrientation.Horizontal,
 				HorizontalOptions = LayoutOptions.StartAndExpand,
-				Children = {titleLabel, tick}
+				Children = {titleLabel, dateLabel}
 			};
 			View = layout;
 		}
