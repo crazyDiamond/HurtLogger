@@ -1,15 +1,14 @@
 using System;
 using Xamarin.Forms;
 using System.Diagnostics;
-using Xamarin.Forms.Labs.Controls;
+using XLabs.Forms.Controls;
 
 namespace HurtLogger
 {
 	
 	public class AddHurtLogPage: ContentPage
 	{
-		public Xamarin.Forms.Labs.Controls.CalendarView _calendarView;
-
+		DatePicker dateDatePicker = new DatePicker{Format="D",Date=DateTime.Today}; 
 		public User User {
 			get;
 			set;
@@ -19,21 +18,25 @@ namespace HurtLogger
 			this.Title ="Add Hurt Log";
 			this.BackgroundColor = Colors.HLPageBackground;
 
-			 _calendarView = new CalendarView() {
-				VerticalOptions = LayoutOptions.Center,
-				HorizontalOptions = LayoutOptions.CenterAndExpand
-			};
-
 
 			NavigationPage.SetHasNavigationBar (this, true);
 			var titleLabel = new Label { Text = "Title", TextColor = Colors.HLLabelTextColor};
 			var titleEntry = new Entry ();
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
 
+			var dateLabel = new Label{ Text="Date", TextColor = Colors.HLLabelTextColor};
+
+			dateDatePicker.SetBinding (DatePicker.DateProperty, "Date");
 
 			var categoryLabel = new Label { Text = "Category", TextColor = Colors.HLLabelTextColor };
-			var categoryEntry = new Entry ();
-			categoryEntry.SetBinding (Entry.TextProperty, "Category");
+			ListView categoryListView = new ListView ();
+			categoryListView.RowHeight = 20;
+			categoryListView.ItemsSource = new string []
+			{
+				"Sick",
+				"Sports Injury"
+			};
+			categoryListView.SetBinding (Entry.TextProperty, "Category");
 
 			var descriptionLabel = new Label { Text = "Description", TextColor = Colors.HLLabelTextColor };
 			var descriptionEntry = new Entry ();
@@ -60,32 +63,24 @@ namespace HurtLogger
 				this.Navigation.PopAsync();
 			};
 
-			var _stacker = new StackLayout ();
-			//Content = _stacker;
-			_calendarView = new CalendarView() {
-				VerticalOptions = LayoutOptions.Center,
-				HorizontalOptions = LayoutOptions.CenterAndExpand
-			};
-			//_stacker.Children.Add (_calendarView);
-			_calendarView.DateSelected += (object sender, DateTime e) => {
-				_stacker.Children.Add(new Label() 
-					{ 
-						Text = "Date Was Selected" + e.ToString("d"),
-						VerticalOptions = LayoutOptions.Start,
-						HorizontalOptions = LayoutOptions.CenterAndExpand,
-					});
-			};
 
 
 			Content = new StackLayout {
 				VerticalOptions = LayoutOptions.FillAndExpand,
 				Padding = new Thickness(20),
 				Children = {
-					titleLabel, titleEntry, 
-					categoryLabel, categoryEntry, descriptionLabel, _calendarView,
+					titleLabel, titleEntry, dateLabel, dateDatePicker,
+					categoryLabel, categoryListView, descriptionLabel, 
 					descriptionEntry, saveButton, deleteButton, cancelButton
 				}
 			};
+
+
+		}
+		protected override void OnAppearing ()
+		{
+			base.OnAppearing ();
+			this.dateDatePicker.Date = DateTime.Today;
 		}
 	}
 }

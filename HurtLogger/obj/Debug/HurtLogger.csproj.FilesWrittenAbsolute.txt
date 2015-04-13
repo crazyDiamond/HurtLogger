@@ -20,3 +20,8 @@
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/System.Text.RegularExpressions.dll
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/ExifLib.dll
 /Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/Xamarin.Forms.Labs.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/XLabs.Ioc.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/XLabs.Core.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/XLabs.Platform.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/XLabs.Serialization.dll
+/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug/XLabs.Forms.dll

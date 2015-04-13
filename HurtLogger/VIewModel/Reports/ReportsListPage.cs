@@ -1,6 +1,5 @@
 using Xamarin.Forms;
 using System.Diagnostics;
-using Xamarin.Forms.Labs.Controls;
 
 
 namespace HurtLogger
