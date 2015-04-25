@@ -1,14 +1,13 @@
 using System;
 using Xamarin.Forms;
 using System.Diagnostics;
-using XLabs.Forms.Controls;
 
 namespace HurtLogger
 {
 	
 	public class AddHurtLogPage: ContentPage
 	{
-		DatePicker dateDatePicker = new DatePicker{Format="D",Date=DateTime.Today}; 
+		DatePicker dateDatePicker = new DatePicker{Format="D"}; 
 		public User User {
 			get;
 			set;
@@ -33,7 +32,7 @@ namespace HurtLogger
 			categoryListView.RowHeight = 20;
 			categoryListView.ItemsSource = new string []
 			{
-				"Sick",
+				"Sickness",
 				"Sports Injury"
 			};
 			categoryListView.SetBinding (Entry.TextProperty, "Category");
@@ -51,12 +50,12 @@ namespace HurtLogger
 				this.Navigation.PopAsync();
 			};
 
-			var deleteButton = new Button { Text = "Delete" };
-			deleteButton.Clicked += (sender, e) => {
-				var hurtLog = (HurtLog)BindingContext;
-				App.Database.DeleteHurtLog(hurtLog.ID);
-				this.Navigation.PopAsync();
-			};
+//			var deleteButton = new Button { Text = "Delete" };
+//			deleteButton.Clicked += (sender, e) => {
+//				var hurtLog = (HurtLog)BindingContext;
+//				App.Database.DeleteHurtLog(hurtLog.ID);
+//				this.Navigation.PopAsync();
+//			};
 
 			var cancelButton = new Button { Text = "Cancel" };
 			cancelButton.Clicked += (sender, e) => {
@@ -71,7 +70,7 @@ namespace HurtLogger
 				Children = {
 					titleLabel, titleEntry, dateLabel, dateDatePicker,
 					categoryLabel, categoryListView, descriptionLabel, 
-					descriptionEntry, saveButton, deleteButton, cancelButton
+					descriptionEntry, saveButton, cancelButton
 				}
 			};
 

@@ -8,7 +8,7 @@ namespace HurtLogger
 	{
 		public HurtLogPage (){
 
-			this.Title ="Add Hurt Log";
+			this.Title ="Edit Hurt Log";
 			this.BackgroundColor = Colors.HLPageBackground;
 
 

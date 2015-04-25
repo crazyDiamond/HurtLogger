@@ -7,20 +7,21 @@ namespace HurtLogger
 	{
 		public HurtLogItemCell(){
 
-			var titleLabel = new Label {
-				YAlign = TextAlignment.Center
-			};
+			var nameLabel = new Label{ YAlign = TextAlignment.Center };
+			nameLabel.SetBinding (Label.TextProperty, "UserName");
+
+			var titleLabel = new Label { YAlign = TextAlignment.Center};
 			titleLabel.SetBinding (Label.TextProperty, "Title");
 
 			var dateLabel = new Label{YAlign = TextAlignment.Center };
-			dateLabel.SetBinding(Label.TextProperty, new Binding(path: "Date", stringFormat: "{0:dd/MM/yyyy}"));
+			dateLabel.SetBinding(Label.TextProperty, new Binding(path: "Date", stringFormat: "{0:MM/dd/yyyy}"));
 
 
 			var layout = new StackLayout {
 				Padding = new Thickness(20, 0, 0, 0),
 				Orientation = StackOrientation.Horizontal,
 				HorizontalOptions = LayoutOptions.StartAndExpand,
-				Children = {titleLabel, dateLabel}
+				Children = {nameLabel, titleLabel, dateLabel}
 			};
 			View = layout;
 		}

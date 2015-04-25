@@ -37,20 +37,6 @@
 	-r \
 	../packages/Xamarin.Forms.1.4.1.6349/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	../packages/XLabs.IoC.2.0.5575/lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll \
-	-r \
-	../packages/XLabs.Core.2.0.5575/lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll \
-	-r \
-	../packages/XLabs.Platform.2.0.5575/lib/Xamarin.iOS10/XLabs.Platform.iOS.dll \
-	-r \
-	../packages/XLabs.Platform.2.0.5575/lib/Xamarin.iOS10/XLabs.Platform.dll \
-	-r \
-	../packages/XLabs.Serialization.2.0.5575/lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll \
-	-r \
-	../packages/XLabs.Forms.2.0.5575/lib/Xamarin.iOS10/XLabs.Forms.iOS.dll \
-	-r \
-	../packages/XLabs.Forms.2.0.5575/lib/Xamarin.iOS10/XLabs.Forms.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug//HurtLogger.dll \
@@ -154,20 +140,6 @@
 	../packages/Xamarin.Forms.1.4.1.6349/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
 	../packages/Xamarin.Forms.1.4.1.6349/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
-	-r \
-	../packages/XLabs.IoC.2.0.5575/lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll \
-	-r \
-	../packages/XLabs.Core.2.0.5575/lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll \
-	-r \
-	../packages/XLabs.Platform.2.0.5575/lib/Xamarin.iOS10/XLabs.Platform.iOS.dll \
-	-r \
-	../packages/XLabs.Platform.2.0.5575/lib/Xamarin.iOS10/XLabs.Platform.dll \
-	-r \
-	../packages/XLabs.Serialization.2.0.5575/lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll \
-	-r \
-	../packages/XLabs.Forms.2.0.5575/lib/Xamarin.iOS10/XLabs.Forms.iOS.dll \
-	-r \
-	../packages/XLabs.Forms.2.0.5575/lib/Xamarin.iOS10/XLabs.Forms.dll \
 	-r \
 	/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/bin/Debug//HurtLogger.dll \
 	/Users/jeevanadarajah/Projects/HurtLogger/iOS/bin/iPhoneSimulator/Debug//HurtLogger.iOS.exe \
