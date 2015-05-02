@@ -28,7 +28,7 @@ namespace HurtLogger
 
 			nameEntry.SetBinding (Entry.TextProperty, "Username");
 
-			var selectSexLabel = new Label { Text = "Select Sex"};
+			var selectSexLabel =new LabelWithFont { FontFamily="FontAwesome", FontSize= 13, TextColor = Xamarin.Forms.Color.Gray, Text = "Select Sex" };
 			var selectSexList = new ListView
 			{
 				RowHeight = 40
@@ -40,11 +40,11 @@ namespace HurtLogger
 			};
 			selectSexList.SetBinding(ListView.SelectedItemProperty, "Sex", BindingMode.TwoWay);
 
-			var notesLabel = new Label { Text = "Age" };
+			var notesLabel = new LabelWithFont { FontFamily="FontAwesome", FontSize= 13, TextColor = Xamarin.Forms.Color.Gray, Text = "Age" };
 			var notesEntry = new Entry ();
 			notesEntry.SetBinding (Entry.TextProperty, "Age");
 
-			var doneLabel = new Label { Text = "Admin" };
+			var doneLabel = new LabelWithFont { FontFamily="FontAwesome", FontSize= 13, TextColor = Xamarin.Forms.Color.Gray, Text = "Admin" };
 			var doneEntry = new Switch ();
 			doneEntry.SetBinding (Switch.IsToggledProperty, "IsAdmin");
 
