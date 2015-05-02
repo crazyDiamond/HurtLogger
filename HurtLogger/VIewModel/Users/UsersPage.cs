@@ -23,7 +23,7 @@ namespace HurtLogger
 			this.SetBinding (Page.TitleProperty, "Name");
 
 			NavigationPage.SetHasNavigationBar (this, true);
-			var nameLabel = new Label { Text = "User Name" };
+			var nameLabel = new LabelWithFont { Text = "User Name" };
 			var nameEntry = new Entry ();
 
 			nameEntry.SetBinding (Entry.TextProperty, "Username");

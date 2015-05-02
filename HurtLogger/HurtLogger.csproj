@@ -56,6 +56,8 @@
     <Compile Include="VIewModel\HurtLogs\HurtLogUserListPage.cs" />
     <Compile Include="VIewModel\HurtLogs\AddHurtLogPage.cs" />
     <Compile Include="VIewModel\AboutPage.cs" />
+    <Compile Include="Views\CustomRenderers\LabelWithFont.cs" />
+    <Compile Include="Layout\FontAwesome.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -85,6 +87,7 @@
     <Folder Include="VIewModel\HurtLogs\" />
     <Folder Include="Layout\" />
     <Folder Include="VIewModel\Reports\" />
+    <Folder Include="Views\CustomRenderers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ProfileListView.xaml">
