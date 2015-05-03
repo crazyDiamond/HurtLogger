@@ -38,3 +38,4 @@ Thumbs.db
 bin
 obj
 Droid/obj
+*.dll
