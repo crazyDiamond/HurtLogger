@@ -7,7 +7,11 @@ namespace HurtLogger
 	{
 		public HurtLogItemCell(){
 
-			var nameLabel = new Label{ YAlign = TextAlignment.Center };
+			var nameLabel = new LabelWithFont { 
+				YAlign = TextAlignment.Center, 
+				FontFamily="FontAwesome", 
+				FontSize= 13, TextColor = 
+				Xamarin.Forms.Color.Gray };
 			nameLabel.SetBinding (Label.TextProperty, "UserName");
 
 			var titleLabel = new Label { YAlign = TextAlignment.Center};

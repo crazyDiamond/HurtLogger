@@ -13,7 +13,11 @@ namespace HurtLogger
 
 
 			NavigationPage.SetHasNavigationBar (this, true);
-			var titleLabel = new Label { Text = "Title", TextColor = Colors.HLLabelTextColor};
+			var titleLabel = new LabelWithFont { 
+				Text = "Title", 
+				FontFamily="FontAwesome", 
+				FontSize= 13, 
+				TextColor = Xamarin.Forms.Color.Gray};
 			var titleEntry = new Entry ();
 
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
