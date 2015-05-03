@@ -8,6 +8,7 @@ namespace HurtLogger
 		ListView listView;
 		public UsersListPage ()
 		{
+			this.Title = "Profiles";
 			this.BackgroundColor = Colors.HLPageBackground;
 
 
