@@ -10,14 +10,22 @@ namespace HurtLogger
 			var nameLabel = new LabelWithFont { 
 				YAlign = TextAlignment.Center, 
 				FontFamily="FontAwesome", 
-				FontSize= 13, TextColor = 
-				Xamarin.Forms.Color.Gray };
+				FontSize= 13, 
+				TextColor = Xamarin.Forms.Color.Gray };
 			nameLabel.SetBinding (Label.TextProperty, "UserName");
 
-			var titleLabel = new Label { YAlign = TextAlignment.Center};
+			var titleLabel = new LabelWithFont { 
+				YAlign = TextAlignment.Center,
+				FontFamily="FontAwesome", 
+				FontSize= 13, 
+				TextColor = Xamarin.Forms.Color.Gray};
 			titleLabel.SetBinding (Label.TextProperty, "Title");
 
-			var dateLabel = new Label{YAlign = TextAlignment.Center };
+			var dateLabel = new LabelWithFont{
+				YAlign = TextAlignment.Center,
+				FontFamily="FontAwesome", 
+				FontSize= 13, 
+				TextColor = Xamarin.Forms.Color.Gray };
 			dateLabel.SetBinding(Label.TextProperty, new Binding(path: "Date", stringFormat: "{0:MM/dd/yyyy}"));
 
 
