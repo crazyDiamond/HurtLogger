@@ -16,7 +16,8 @@ namespace HurtLogger
 			listView.BackgroundColor = Colors.HLPageBackground;
 			listView.ItemSelected += (sender, e) => {
 				var hurtLogItem = new HurtLog{
-					UserId = ((User)e.SelectedItem).ID
+					UserId = ((User)e.SelectedItem).ID,
+					UserName = ((User)e.SelectedItem).Username,
 				};
 
 				var addHurtLogPage = new AddHurtLogPage();
