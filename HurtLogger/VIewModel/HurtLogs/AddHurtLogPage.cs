@@ -35,7 +35,7 @@ namespace HurtLogger
 				"Sickness",
 				"Sports Injury"
 			};
-			categoryListView.SetBinding (Entry.TextProperty, "Category");
+			categoryListView.SetBinding (ListView.SelectedItemProperty, "Category", BindingMode.TwoWay);
 
 			var descriptionLabel = new Label { Text = "Description", TextColor = Colors.HLLabelTextColor };
 			var descriptionEntry = new Entry ();
