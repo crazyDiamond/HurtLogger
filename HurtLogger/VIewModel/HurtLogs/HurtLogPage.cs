@@ -19,18 +19,23 @@ namespace HurtLogger
 				FontSize= 13, 
 				TextColor = Xamarin.Forms.Color.Gray};
 			var titleEntry = new Entry ();
-
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
-			var selectUserLabel = new Label { Text = "Select User", TextColor = Colors.HLLabelTextColor  };
-			var selectUserList = new ListView
-			{
-				RowHeight = 40
-			};
 
-			selectUserList.ItemsSource = App.Database.GetAllUsers ();
-			selectUserList.ItemTemplate = new DataTemplate(typeof(TextCell));
-			selectUserList.ItemTemplate.SetBinding (TextCell.TextProperty, "Username");
-			selectUserList.SetBinding(ListView.SelectedItemProperty, "UserId", BindingMode.TwoWay);
+
+//			var selectUserLabel = new Label { Text = "Select User", TextColor = Colors.HLLabelTextColor  };
+//			var selectUserList = new ListView
+//			{
+//				RowHeight = 40
+//			};
+//
+//			selectUserList.ItemsSource = App.Database.GetAllUsers ();
+//			selectUserList.ItemTemplate = new DataTemplate(typeof(TextCell));
+//			selectUserList.ItemTemplate.SetBinding (TextCell.TextProperty, "Username");
+//			selectUserList.SetBinding(ListView.SelectedItemProperty, "UserId", BindingMode.TwoWay);
+
+			var nameLabel = new Label{Text="Name", TextColor = Colors.HLLabelTextColor };
+			var nameEntry = new Entry ();
+			nameEntry.SetBinding (Entry.TextProperty, "UserName");
 
 			var categoryLabel = new Label { Text = "Category", TextColor = Colors.HLLabelTextColor };
 			var categoryEntry = new Entry ();
@@ -67,8 +72,8 @@ namespace HurtLogger
 				VerticalOptions = LayoutOptions.FillAndExpand,
 				Padding = new Thickness(20),
 				Children = {
-					titleLabel, titleEntry, 
-					categoryLabel, categoryEntry, descriptionLabel, selectUserLabel, selectUserList,
+					titleLabel, titleEntry, nameLabel, nameEntry,
+					categoryLabel, categoryEntry, descriptionLabel,// selectUserLabel, selectUserList,
 					descriptionEntry, saveButton, deleteButton, cancelButton
 				}
 			};

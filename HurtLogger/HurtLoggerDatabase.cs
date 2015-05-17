@@ -34,8 +34,7 @@ namespace HurtLogger
 
 		public System.Collections.IEnumerable GetAllHurtLogs ()
 		{
-			return database.Query<HurtLog>("SELECT H.ID, H.UserId, H.Title, H.Category, H.Description, H.Date, U.UserName FROM [HurtLog] H " +
-				"INNER JOIN [User] as U ON U.ID = H.UserId ORDER BY Date DESC ");
+			return database.Query<HurtLog>("SELECT H.ID, H.UserId, H.Title, H.Category, H.Description, H.Date, U.Username as UserName FROM [HurtLog] H JOIN [User] as U ON U.ID = H.UserId ORDER BY Date DESC ");
 		}
 
 		public User GetItem (int id) 

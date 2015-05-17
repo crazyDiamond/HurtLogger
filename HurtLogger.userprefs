@@ -1,25 +1,22 @@
-﻿<Properties StartupItem="iOS/HurtLogger.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HurtLogger/VIewModel/HurtLogs/AddHurtLogPage.cs">
+﻿<Properties StartupItem="Droid/HurtLogger.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.102:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HurtLogger/HurtLoggerDatabase.cs">
     <Files>
-      <File FileName="HurtLogger/VIewModel/Reports/ReportsListPage.cs" Line="31" Column="1" />
-      <File FileName="HurtLogger/VIewModel/Users/UsersListPage.cs" Line="97" Column="1" />
-      <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogListPage.cs" Line="52" Column="5" />
-      <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogUserListPage.cs" Line="27" Column="63" />
-      <File FileName="HurtLogger/VIewModel/Users/UsersPage.cs" Line="90" Column="1" />
-      <File FileName="HurtLogger/VIewModel/HurtLogs/AddHurtLogPage.cs" Line="46" Column="42" />
-      <File FileName="HurtLogger/VIewModel/RootPage.cs" Line="9" Column="3" />
-      <File FileName="HurtLogger/Models/MenuListData.cs" Line="15" Column="32" />
-      <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogPage.cs" Line="76" Column="1" />
-      <File FileName="HurtLogger/Models/HurtLog.cs" Line="6" Column="2" />
+      <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogListPage.cs" Line="17" Column="32" />
+      <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogItemCell.cs" Line="6" Column="2" />
+      <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogPage.cs" Line="9" Column="3" />
+      <File FileName="HurtLogger/Models/MenuListData.cs" Line="25" Column="31" />
+      <File FileName="HurtLogger/Models/HurtLog.cs" Line="12" Column="25" />
+      <File FileName="HurtLogger/HurtLoggerDatabase.cs" Line="17" Column="33" />
+      <File FileName="HurtLogger/Models/User.cs" Line="9" Column="16" />
+      <File FileName="HurtLogger/VIewModel/HurtLogs/AddHurtLogPage.cs" Line="49" Column="39" />
+      <File FileName="HurtLogger/VIewModel/Users/UsersListPage.cs" Line="93" Column="1" />
+      <File FileName="HurtLogger/VIewModel/RootPage.cs" Line="23" Column="1" />
+      <File FileName="HurtLogger/VIewModel/Users/UserItemCell.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/VIewModel/Users/UserItemCell.cs" line="4" column="1" />
-      <Breakpoint file="/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/VIewModel/HurtLogs/AddHurtLogPage.cs" line="29" column="1" />
-      <Breakpoint file="/Users/jeevanadarajah/Projects/HurtLogger/HurtLogger/VIewModel/HurtLogs/AddHurtLogPage.cs" line="47" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
