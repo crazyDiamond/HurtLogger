@@ -16,6 +16,7 @@ namespace HurtLogger
 			database = DependencyService.Get<ISQLite> ().GetConnection ();
 			database.CreateTable<User>();
 			database.CreateTable<HurtLog> ();
+			database.CreateTable<Category> ();
 		}
 
 		public IEnumerable<User> GetItems () {
@@ -25,6 +26,11 @@ namespace HurtLogger
 		public IEnumerable<User> GetAllUsers ()
 		{
 			return database.Query<User>("SELECT ID, UserName FROM [User] ");
+		}
+
+		public IEnumerable<Category> GetAllCategories ()
+		{
+			return database.Query<Category>("SELECT ID, Name FROM [Category] ");
 		}
 
 		public IEnumerable<User> GetUserNames ()
@@ -48,6 +54,7 @@ namespace HurtLogger
 			return database.Table<User>().FirstOrDefault(x => x.ID == id);
 		}
 
+
 		public int SaveUser (User item) 
 		{
 			lock (locker) {
@@ -60,10 +67,30 @@ namespace HurtLogger
 			}
 		}
 
+
 		public int DeleteUser(int id)
 		{
 			lock (locker) {
 				return database.Delete<User>(id);
+			}
+		}
+
+		public int SaveCategory (Category item) 
+		{
+			lock (locker) {
+				if (item.ID != 0) {
+					database.Update(item);
+					return item.ID;
+				} else {
+					return database.Insert(item);
+				}
+			}
+		}
+
+		public int DeleteCategory(int id)
+		{
+			lock (locker) {
+				return database.Delete<Category>(id);
 			}
 		}
 
