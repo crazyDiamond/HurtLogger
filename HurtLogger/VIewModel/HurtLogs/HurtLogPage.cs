@@ -21,7 +21,6 @@ namespace HurtLogger
 			var titleEntry = new Entry ();
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
 
-
 //			var selectUserLabel = new Label { Text = "Select User", TextColor = Colors.HLLabelTextColor  };
 //			var selectUserList = new ListView
 //			{
@@ -42,8 +41,8 @@ namespace HurtLogger
 			categoryEntry.SetBinding (Entry.TextProperty, "Category");
 
 			var descriptionLabel = new Label { Text = "Description", TextColor = Colors.HLLabelTextColor };
-			var descriptionEntry = new Entry ();
-			descriptionEntry.SetBinding (Entry.TextProperty, "Description");
+			var descriptionEntry = new Editor ();
+			descriptionEntry.SetBinding (Editor.TextProperty, "Description");
 
 			var saveButton = new Button { Text = "Save" };
 			saveButton.Clicked += (sender, e) => {
@@ -66,14 +65,12 @@ namespace HurtLogger
 				this.Navigation.PopAsync();
 			};
 
-
-
 			Content = new StackLayout {
 				VerticalOptions = LayoutOptions.FillAndExpand,
 				Padding = new Thickness(20),
 				Children = {
 					titleLabel, titleEntry, nameLabel, nameEntry,
-					categoryLabel, categoryEntry, descriptionLabel,// selectUserLabel, selectUserList,
+					categoryLabel, categoryEntry, descriptionLabel,
 					descriptionEntry, saveButton, deleteButton, cancelButton
 				}
 			};
