@@ -19,7 +19,7 @@ namespace HurtLogger
 			listView.BackgroundColor = Colors.HLPageBackground;
 			listView.ItemSelected += (sender, e) => {
 				var userItem = (User)e.SelectedItem;
-				var userPage = new UsersPage(userItem);
+				var userPage = new HurtLogsByUserPage(userItem);
 
 				((App)Application.Current).ResumeAtUserId = userItem.ID;
 				Debug.WriteLine("setting ResumeAtUserId = " + userItem.ID);

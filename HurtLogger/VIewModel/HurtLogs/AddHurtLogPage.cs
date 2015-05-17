@@ -33,7 +33,8 @@ namespace HurtLogger
 			categoryListView.ItemsSource = new string []
 			{
 				"Sickness",
-				"Sports Injury"
+				"Sports Injury",
+				"Medicine"
 			};
 			categoryListView.SetBinding (ListView.SelectedItemProperty, "Category", BindingMode.TwoWay);
 

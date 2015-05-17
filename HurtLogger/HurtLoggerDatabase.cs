@@ -37,6 +37,12 @@ namespace HurtLogger
 			return database.Query<HurtLog>("SELECT H.ID, H.UserId, H.Title, H.Category, H.Description, H.Date, U.Username as UserName FROM [HurtLog] H JOIN [User] as U ON U.ID = H.UserId ORDER BY Date DESC ");
 		}
 
+		public System.Collections.IEnumerable GetAllHurtLogsByUserId (int userId)
+		{
+			var query = database.Query<HurtLog>("SELECT H.ID, H.UserId, H.Title, H.Category, H.Description, H.Date, U.Username as UserName FROM [HurtLog] H JOIN [User] as U ON U.ID = H.UserId WHERE U.ID = ? ORDER BY Date DESC ", userId);
+			return query;
+		}
+
 		public User GetItem (int id) 
 		{
 			return database.Table<User>().FirstOrDefault(x => x.ID == id);
