@@ -12,7 +12,7 @@ namespace HurtLogger
 
 			menuPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as MenuItem);
 			Master = menuPage;
-			Detail = new NavigationPage (new UsersListPage ());
+			Detail = new NavigationPage (new HurtLogUserListPage ());
 
 		}
 

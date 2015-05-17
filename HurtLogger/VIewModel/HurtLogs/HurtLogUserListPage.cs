@@ -8,7 +8,7 @@ namespace HurtLogger
 		public HurtLogUserListPage ()
 		{
 			this.BackgroundColor = Colors.HLPageBackground;
-			this.Title = "Select a profile";
+			this.Title = "Add a hurt log";
 
 			listView = new ListView ();
 			listView.ItemTemplate = new DataTemplate 
