@@ -29,22 +29,29 @@ namespace HurtLogger
 			};
 
 			var layout = new StackLayout();
-			if (Device.OS == TargetPlatform.WinPhone) { // WinPhone doesn't have the title showing
-				layout.Children.Add(new Label{
-					Text="Users", 
-					FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label))});
+
+			#region toolbar
+			ToolbarItem tbi = null;
+			if (Device.OS == TargetPlatform.Android) { 
+				tbi = new ToolbarItem ("+", "plus", () => {
+					var item = new Category();
+					var categoryPage = new CategoryPage(item);
+					categoryPage.BindingContext = item;
+					Navigation.PushAsync(categoryPage);
+				}, 0, 0);
 			}
+			#endregion
+
+			ToolbarItems.Add (tbi);
+
 			layout.Children.Add(listView);
 			layout.VerticalOptions = LayoutOptions.FillAndExpand;
 			Content = layout;
-
-
 		}
 
 		protected override void OnAppearing ()
 		{
 			base.OnAppearing ();
-			// reset the 'resume' id, since we just want to re-start here
 			((App)Application.Current).ResumeAtUserId = -1;
 			listView.ItemsSource = App.Database.GetAllCategories ();
 		}
