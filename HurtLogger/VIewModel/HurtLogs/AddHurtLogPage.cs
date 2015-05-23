@@ -8,10 +8,7 @@ namespace HurtLogger
 	public class AddHurtLogPage: ContentPage
 	{
 		DatePicker dateDatePicker = new DatePicker{Format="D"}; 
-		public User User {
-			get;
-			set;
-		}
+
 
 		public AddHurtLogPage (){
 			this.Title ="Add Hurt Log";
@@ -24,7 +21,6 @@ namespace HurtLogger
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
 
 			var dateLabel = new Label{ Text="Date", TextColor = Colors.HLLabelTextColor};
-
 			dateDatePicker.SetBinding (DatePicker.DateProperty, "Date");
 
 			var categoryLabel = new Label { Text = "Category", TextColor = Colors.HLLabelTextColor };

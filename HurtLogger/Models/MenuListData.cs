@@ -32,6 +32,12 @@ namespace HurtLogger
 			});
 
 			this.Add (new MenuItem () {
+				Title = "Categories",
+				IconSource = "view.png",
+				TargetType = typeof(CategoryListPage)
+			});
+
+			this.Add (new MenuItem () {
 				Title = "About",
 				IconSource = "about.png",
 				TargetType = typeof(AboutPage)

@@ -1,11 +1,14 @@
-﻿using System;
-using Xamarin.Forms;
-using System.Diagnostics;
+﻿using Xamarin.Forms;
 
 namespace HurtLogger
 {
 	public class HurtLogPage : ContentPage
 	{
+		DatePicker dateDatePicker = new DatePicker{Format="D"}; 
+		public User User {
+			get;
+			set;
+		}
 		public HurtLogPage (){
 
 			this.Title ="Edit Hurt Log";
@@ -20,6 +23,10 @@ namespace HurtLogger
 				TextColor = Xamarin.Forms.Color.Gray};
 			var titleEntry = new Entry ();
 			titleEntry.SetBinding (Entry.TextProperty, "Title");
+
+			var dateLabel = new Label{ Text="Date", TextColor = Colors.HLLabelTextColor};
+			dateDatePicker.SetBinding (DatePicker.DateProperty, "Date");
+
 
 //			var selectUserLabel = new Label { Text = "Select User", TextColor = Colors.HLLabelTextColor  };
 //			var selectUserList = new ListView
@@ -47,8 +54,7 @@ namespace HurtLogger
 			var saveButton = new Button { Text = "Save" };
 			saveButton.Clicked += (sender, e) => {
 				var hurtLogItem = (HurtLog)BindingContext;
-				Debug.WriteLine (DateTime.UtcNow);
-				hurtLogItem.Date = DateTime.UtcNow;
+				hurtLogItem.Date = dateDatePicker.Date;
 				App.Database.SaveHurtLog(hurtLogItem);
 				this.Navigation.PopAsync();
 			};
@@ -70,11 +76,14 @@ namespace HurtLogger
 				Padding = new Thickness(20),
 				Children = {
 					titleLabel, titleEntry, nameLabel, nameEntry,
+					dateLabel, dateDatePicker,
 					categoryLabel, categoryEntry, descriptionLabel,
 					descriptionEntry, saveButton, deleteButton, cancelButton
 				}
 			};
+
 		}
+
 	}
 }
 
