@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="HurtLogger.Droid">
-  <uses-sdk android:minSdkVersion="15" />
-  <application android:name="mono.android.app.Application" android:debuggable="true">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hurtlogger" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
+  <application android:label="HurtLogger" android:icon="@drawable/hurtlogger80" android:debuggable="true" android:name="mono.android.app.Application">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="HurtLogger.Droid" android:name="md59807f25a104d60e5a4eb54ab73fc381e.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="HurtLogger.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.hurtlogger.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.HurtLogger.Droid" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.hurtlogger" />
       </intent-filter>
     </receiver>
   </application>

@@ -34,3 +34,6 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll.mdb
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/com.hurtlogger.apk
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/android/bin/com.hurtlogger.apk
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/com.hurtlogger-Signed.apk
