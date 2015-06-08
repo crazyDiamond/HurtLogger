@@ -25,7 +25,7 @@ namespace HurtLogger
 
 			var categoryLabel = new Label { Text = "Category", TextColor = Colors.HLLabelTextColor };
 			ListView categoryListView = new ListView ();
-			categoryListView.RowHeight = 20;
+			categoryListView.RowHeight = 30;
 			categoryListView.ItemsSource = new string []
 			{
 				"Sickness",
