@@ -25,7 +25,7 @@ namespace HurtLogger
 //			};
 
 
-			var menuImage = new Image{ Source = "hurtlogger80.png"
+			var menuImage = new Image{ Source = "../drawable-hdpi/ic_launcher.png"
 				};
 
 			var layout = new StackLayout { 

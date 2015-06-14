@@ -1,8 +1,8 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/MonoAndroid,Version=v5.0.AssemblyAttribute.cs
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.Droid.dll.mdb
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.Droid.dll
-/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.Droid.apk
-/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/android/bin/HurtLogger.Droid.apk
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/com.hurtlogger.apk
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/android/bin/com.hurtlogger.apk
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/icon.png
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-hdpi/icon.png
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-xhdpi/icon.png
@@ -20,8 +20,11 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/plus24.png
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/profile.png
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/hurtlogger80.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-hdpi/thumbs.db
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-hdpi/ic_launcher.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/ic_launcher.png
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/R.cs.flag
-/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.Droid-Signed.apk
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/com.hurtlogger-Signed.apk
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/uploadflags.txt
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/HurtLogger.Droid.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/HurtLogger.Droid.dll.mdb
@@ -34,6 +37,3 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll.mdb
-/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/com.hurtlogger.apk
-/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/android/bin/com.hurtlogger.apk
-/Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/com.hurtlogger-Signed.apk
