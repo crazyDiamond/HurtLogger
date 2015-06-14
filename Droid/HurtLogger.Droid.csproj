@@ -102,7 +102,6 @@
     <AndroidResource Include="Resources\drawable\contacts.png" />
     <AndroidResource Include="Resources\drawable\leads.png" />
     <AndroidResource Include="Resources\drawable\opportunities.png" />
-    <AndroidResource Include="Resources\drawable\settings.png" />
     <AndroidResource Include="Resources\raw\HurtLoggerSQLite.db3" />
     <AndroidResource Include="Resources\drawable\plus.png" />
     <AndroidResource Include="Resources\drawable\recent.png" />
@@ -110,7 +109,6 @@
     <AndroidResource Include="Resources\drawable\view.png" />
     <AndroidResource Include="Resources\drawable\plus24.png" />
     <AndroidResource Include="Resources\drawable\profile.png" />
-    <AndroidResource Include="Resources\drawable\hurtlogger80.png" />
     <AndroidResource Include="Resources\drawable-hdpi\Thumbs.db" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable\ic_launcher.png" />
