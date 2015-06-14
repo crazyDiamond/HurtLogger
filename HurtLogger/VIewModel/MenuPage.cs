@@ -9,7 +9,7 @@ namespace HurtLogger
 		public ListView Menu { get; set;}
 		public MenuPage ()
 		{
-			Icon = "settings.png";
+			Icon = "hamburger.png";
 			Title = "Hurt Logger"; 
 			BackgroundColor = Colors.HLMenuBackground;
 

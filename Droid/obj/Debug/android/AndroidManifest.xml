@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hurtlogger" android:versionName="1" android:versionCode="2">
   <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
   <application android:label="HurtLogger" android:icon="@drawable/hurtlogger80" android:debuggable="true" android:name="mono.android.app.Application">
+    <supports-screens android:resizeable="true" android:smallScreens="false" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" android:compatibleWidthLimitDp="320" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/hurtlogger80" android:label="HurtLogger.Droid" android:name="md59807f25a104d60e5a4eb54ab73fc381e.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

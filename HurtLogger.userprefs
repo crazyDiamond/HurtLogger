@@ -1,8 +1,10 @@
 ﻿<Properties StartupItem="Droid/HurtLogger.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HurtLogger/VIewModel/HurtLogs/HurtLogPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/obj/Debug/android/AndroidManifest.xml">
     <Files>
       <File FileName="HurtLogger/VIewModel/HurtLogs/HurtLogPage.cs" Line="42" Column="78" />
+      <File FileName="HurtLogger/Models/MenuListData.cs" Line="11" Column="33" />
+      <File FileName="Droid/obj/Debug/android/AndroidManifest.xml" Line="6" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

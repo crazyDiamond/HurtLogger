@@ -37,3 +37,10 @@
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll
 /Users/jeevanadarajah/Projects/HurtLogger/Droid/bin/Debug/HurtLogger.dll.mdb
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/users.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-xhdpi/ic_launcher.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-xxhdpi/ic_launcher.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable/hamburger.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-hdpi/hamburger.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-xhdpi/hamburger.png
+/Users/jeevanadarajah/Projects/HurtLogger/Droid/obj/Debug/res/drawable-xxhdpi/hamburger.png
