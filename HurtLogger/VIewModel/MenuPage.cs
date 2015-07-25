@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 
 namespace HurtLogger
@@ -13,17 +12,7 @@ namespace HurtLogger
 			Title = "Hurt Logger"; 
 			BackgroundColor = Colors.HLMenuBackground;
 
-			Menu = new MenuListView ();
-
-
-//			var menuLabel = new ContentView {
-//				Padding = new Thickness (10, 36, 0, 5),
-//				Content = new Label {
-//					TextColor = Color.White,
-//					Text = "MENU"
-//				},
-//			};
-
+			Menu = new MenuListView (){};
 
 			var menuImage = new Image{ Source = "../drawable-hdpi/ic_launcher.png"
 				};
@@ -32,7 +21,9 @@ namespace HurtLogger
 				Spacing = 0, 
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
-			//layout.Children.Add (menuLabel);
+
+
+			Menu.Header = "Hurt Logger";
 			layout.Children.Add (menuImage);
 			layout.Children.Add (Menu);
 

@@ -33,7 +33,7 @@ namespace HurtLogger
 
 			this.Add (new MenuItem () {
 				Title = "Categories",
-				IconSource = "view.png",
+				IconSource = "category.png",
 				TargetType = typeof(CategoryListPage)
 			});
 

@@ -14,7 +14,7 @@ public final class R {
         public static int about=0x7f020000;
         public static int accounts=0x7f020001;
         public static int contacts=0x7f020002;
-        public static int hurtlogger80=0x7f020003;
+        public static int hamburger=0x7f020003;
         public static int ic_launcher=0x7f020004;
         public static int icon=0x7f020005;
         public static int leads=0x7f020006;
@@ -23,7 +23,7 @@ public final class R {
         public static int plus24=0x7f020009;
         public static int profile=0x7f02000a;
         public static int recent=0x7f02000b;
-        public static int settings=0x7f02000c;
+        public static int users=0x7f02000c;
         public static int view=0x7f02000d;
     }
     public static final class raw {
